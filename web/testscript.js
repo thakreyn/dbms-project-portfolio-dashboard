@@ -24,7 +24,7 @@ document.getElementById("etf-btn").addEventListener('click', function () {
 document.getElementById("cash-btn").addEventListener('click', function () {
     hideOverview()
     generateTable(USERNAME, 'cash')
-    categoryChart(USERNAME, 'cash')
+    categoryChart('cash')
 });
 
 
@@ -49,7 +49,7 @@ function makeChart(data, categoryName) {
         animationEnabled: true,
         theme: "dark1",
         title:{
-            text: categoryName,
+            text: categoryName==='Cash'?'Commodity':categoryName,
             horizontalAlign: "center",
             fontFamily: "tahoma",
             fontSize : 30

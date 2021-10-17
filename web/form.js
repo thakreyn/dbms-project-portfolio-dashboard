@@ -31,7 +31,7 @@ function handleSubmit(event) {
 
     output = {
         name: name,
-        category: category,
+        category: category === 'commodity'?'cash':category,
         quantity: quantity,
         price: price,
         action: action

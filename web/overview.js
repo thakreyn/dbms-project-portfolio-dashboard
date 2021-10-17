@@ -45,7 +45,7 @@ async function callOverview() {
     data = []
 
     for (category in categoryAmount) {
-        temp = { y: (categoryAmount[category] / totalAmount) * 100, label: category }
+        temp = { y: (categoryAmount[category] / totalAmount) * 100, label: category==='cash'?'commodity':category }
         data.push(temp)
     }
 
