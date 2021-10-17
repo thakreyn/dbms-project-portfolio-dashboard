@@ -1,0 +1,200 @@
+/* Background Color : #010409 */
+/* Header Background : #171A22 */
+/* Highlight Color : #346FE0 */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+}
+
+body {
+    background-color: #010409;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: #171A22;
+    height: 13.33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: solid 4px #346FE0;
+    vertical-align: middle;
+}
+
+.header-option {
+    min-width: 10.27%;
+    width: 10.27%;
+    height: 100%;
+
+    vertical-align: middle;
+}
+
+.header-option > h2 {
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 22.5% 0;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.header-option:hover {
+    background-color: rebeccapurple;
+}
+
+.chart-container {
+    margin-top: 5%;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+#chartContainer {
+    width: 40%;
+    height: 100%;
+}
+
+table {
+    color: white;
+}
+
+#table-container {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#wrapper {
+    padding-top: 2%;
+    width: 50%;
+    vertical-align:middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buysell {
+    margin-top: 2%;
+    height: 10%;
+    padding: 0.4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#buy-btn {
+    color: white;
+    width: 12%;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#buy-btn {
+    background-color: #57a773;
+}
+
+.overview-indent {
+    margin-left: 50px;
+}
+
+
+/**/
+
+
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;  
+    bottom: 5%;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    position: absolute;
+    margin-right: 40%;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+#dark  {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: black;
+    opacity: 0.7;
+
+    display: none;
+    position: absolute;
+    cursor: not-allowed;
+}
+
+#wrapper2 {
+    padding-top: 2%;
+    width: 50%;
+    vertical-align:middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+
+    color: white;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Layout</title>
+
+    <link rel="stylesheet" href="teststyle.css">
+    <script defer src="testscript.js"></script>
+    <script src="overview.js"></script>
+    <script src="form.js"></script>
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script src="chartBuild.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+        <div class="header-option">
+            <h2 id="overview-btn">Overview</h2>
+        </div>
+
+        <div class="header-option">
+            <h2 id="equity-btn">Equity</h2>
+        </div>
+
+        <div class="header-option">
+            <h2 id="crypto-btn">Crypto</h2>
+        </div>
+
+        <div class="header-option">
+            <h2 id="etf-btn">ETF</h2>
+        </div>
+
+        <div class="header-option">
+            <h2 id="cash-btn">Cash</h2>
+        </div>
+    </header>
+
+    <div class="chart-container">
+
+        <div id="chartContainer"></div>
+
+        <div id="wrapper"></div>
+        
+        <div id="wrapper2">
+            
+        </div>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    </div>
+
+    <div class="buysell">
+        <button onclick="openForm()" id="buy-btn">
+            Edit Portfolio
+        </button>
+        <!-- <button id = "sell-btn">
+            Sell
+        </button> -->
+
+
+    </div>
+
+
+    <script src="https://unpkg.com/gridjs/dist/gridjs.production.min.js"></script>
+    <script defer src="grid.js"></script>
+
+    <div id="dark"></div>
+
+</body>
+
+
+
+<div class="form-popup" id="myForm">
+    <form class="form-container">
+        <h1>Order</h1>
+
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name of holding" name="name" required>
+
+        <label for="category"><b>category</b></label>
+        <input type="text" placeholder="Enter Category" name="category" required>
+
+        <label for="action"><b>action</b></label>
+        <input type="text" placeholder="Enter action (Buy / Sell)" name="action" required>
+
+        <label for="quantity"><b>quantity</b></label>
+        <input type="text" placeholder="Enter quantity" name="quantity" required>
+
+        <label for="price"><b>price</b></label>
+        <input type="text" placeholder="Enter price" name="price" required>
+
+
+        <button type="submit" class="btn">Execute</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+</div>
+
+</html>
