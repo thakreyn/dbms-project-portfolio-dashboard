@@ -5,26 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Layout</title>
+    <title>Portfolio Dashboard</title>
 
+    <!-- Main CSS File -->
     <link rel="stylesheet" href="teststyle.css">
+
+    <!-- Custom JS Scripts -->
     <script defer src="testscript.js"></script>
     <script src="overview.js"></script>
     <script src="form.js"></script>
+    <!-- <script src="chartBuild.js"></script> -->
 
-
+    <!-- JQuery -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
-    <script src="chartBuild.js"></script>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
+    <!-- Grid JS -->
     <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
 </head>
 
 <body>
 
+    <!-- Header Section -->
     <header>
         <div class="header-option">
             <h2 id="overview-btn">Overview</h2>
@@ -47,40 +53,42 @@
         </div>
     </header>
 
+    <!-- Container for chart and table -->
     <div class="chart-container">
 
+        <!-- Chart -->
         <div id="chartContainer"></div>
 
+        <!-- Table -->
         <div id="wrapper"></div>
         
+        <!-- Overview -->
         <div id="wrapper2">
             
         </div>
+
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
     </div>
 
+    <!-- Buy sell Form -->
     <div class="buysell">
         <button onclick="openForm()" id="buy-btn">
             Edit Portfolio
         </button>
-        <!-- <button id = "sell-btn">
-            Sell
-        </button> -->
-
-
     </div>
 
-
+    <!-- Grid Js  -->
     <script src="https://unpkg.com/gridjs/dist/gridjs.production.min.js"></script>
     <script defer src="grid.js"></script>
 
+    <!-- Dark Layer -->
     <div id="dark"></div>
 
 </body>
 
 
-
+<!-- Form Data -->
 <div class="form-popup" id="myForm">
     <form class="form-container">
         <h1>Order</h1>

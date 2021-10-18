@@ -1,6 +1,4 @@
-// Total Money
-// Then ratio and percent
-
+// Utility Function to create a GET api call
 async function getUserData(url = '') {
     const response = await fetch(
         url,
@@ -12,7 +10,9 @@ async function getUserData(url = '') {
     return response.json();
 }
 
-
+// Responsible for Overview 'view'
+// Calculates statistics for a given username and
+// Finally calls make chart for the overview chart
 async function callOverview() {
     var userData = "apple"
 
@@ -37,9 +37,8 @@ async function callOverview() {
             categoryAmount[category] += item.price * item.quantity
         }
     }
-
-    // console.log(totalAmount, categoryAmount)
-
+    
+    // Sets overview text in the div
     generateOverviewText(totalAmount, categoryAmount)
 
     data = []
@@ -49,10 +48,13 @@ async function callOverview() {
         data.push(temp)
     }
 
-    // console.log(data)
+    // Send cateegory data to make chart to render chart
     makeChart(data, "Overview")
 }
 
+
+// Function for generating User summary/overview
+// Takes in statistics calculated in callOverview
 function generateOverviewText(totalAmount, categoryAmount) {
 
     document.getElementById("wrapper2").innerHTML =
