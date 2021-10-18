@@ -48,6 +48,7 @@ function constructTable(username) {
 
 }
 
+
 // Function to update the table
 // Simply calls the API for refreshed data 
 // According to the category
@@ -65,6 +66,7 @@ function generateTable(username, category = 'equity') {
     }
 
 }
+
 
 // Initial Table construction
 // By default : Equity

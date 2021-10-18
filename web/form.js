@@ -63,9 +63,6 @@ function handleSubmit(event) {
             // Generate and refresh table
             generateTable(USERNAME)
         })
-
-    
-
 }
 
 // Posts the given data to the api
